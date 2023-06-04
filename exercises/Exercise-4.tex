@@ -1,0 +1,39 @@
+\documentclass{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+\title{Brief Article}
+\author{The Author}
+\date{\today}							% Activate to display a given date or no date
+
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue}
+
+\begin{document}
+    \maketitle
+
+    \section{Getting Started}
+
+    \textbf{Hello World!} Today I am learning \LaTeX. \LaTeX{} is a great program for writing math. I can write in line math such as $a^2 + b^2 = c^2$. I can also give equations their own space:
+    \begin{equation}
+        \gamma ^ 2 + \theta^2=\omega ^2
+    \end{equation}
+    ``Maxwell's equations'' are named for James Clark Maxwell and are as follow:
+
+    \begin{align}
+        \vec{\nabla}\cdot\vec{E} & \quad=\quad\frac{\rho}{\epsilon_0} && \text{Gauss's Law}
+        \label{eq:GaussLaw}
+        \\
+        \vec{\nabla}\cdot\vec{B} &\quad=\quad0 && \text{Gauss's Law for Magnetism}
+        \label{eq:GaussLawMag}
+        \\
+        \vec{\nabla}\times\vec{E} & \quad=\quad -\frac{\partial\vec{B}}{\partial t} && \text{Faraday's Law of Induction}
+        \label{eq:FaradayLawInduc}
+        \\
+        \vec{\nabla}\times\vec{B} & \quad=\quad \mu_0 \left(\epsilon_0\frac{\partial\vec{E}}{\partial t}+\vec{J}\right) && \text{Ampere's Circuital Law}
+        \label{eq:AmpereCurcuitalLaw}
+    \end{align}
+    Equations \ref{eq:GaussLaw}, \ref{eq:GaussLawMag}, \ref{eq:FaradayLawInduc}, and \ref{eq:AmpereCurcuitalLaw} are some of the most important in Physics.
+
+    \section{What about Matrix Equations?}
+
+\end{document}  

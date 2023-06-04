@@ -1,0 +1,22 @@
+\documentclass{article}
+
+\usepackage{pgfmath}
+
+\title{New Commands}
+\author{Alvin Kim}
+
+\newcommand{\multiplication}[2]{
+    \begin{tabular}{r r}
+        &$#1$\\
+        $\times$ &$#2$\\
+        \hline
+        &\pgfmathparse{#1*#2}
+        \pgfmathresult
+    \end{tabular}
+}
+
+\begin{document}
+    \maketitle
+
+    \multiplication{5}{6}
+\end{document}
